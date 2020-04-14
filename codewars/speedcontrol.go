@@ -5,7 +5,7 @@ func Gps(s int, x []float64) int {
 	biggest := 0.0
 	for _, i := range x {
 		if i-lastDelta > biggest {
-			biggest = lastDelta
+			biggest = i - lastDelta
 		}
 		lastDelta = i
 	}
